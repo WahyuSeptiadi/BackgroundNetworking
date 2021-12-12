@@ -12,6 +12,9 @@
         android:theme="@style/Theme.BackgroundNetworking"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".thread.ThreadActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

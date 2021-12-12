@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/arstu/AndroidStudioProjects/BackgroundNetworking/app/src/main/res/layout/activity_main.xml" value="0.3026041666666667" />
+        <entry key="..\:/Users/arstu/AndroidStudioProjects/BackgroundNetworking/app/src/main/res/drawable/bg_round20_orange.xml" value="0.34010416666666665" />
+        <entry key="..\:/Users/arstu/AndroidStudioProjects/BackgroundNetworking/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/arstu/AndroidStudioProjects/BackgroundNetworking/app/src/main/res/layout/activity_thread.xml" value="0.31979166666666664" />
       </map>
     </option>
   </component>
