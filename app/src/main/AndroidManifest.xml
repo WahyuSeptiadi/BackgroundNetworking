@@ -11,6 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BackgroundNetworking"
         tools:ignore="AllowBackup">
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".service.MyServiceActivity"
+            android:exported="false" />
         <activity
             android:name=".thread.ThreadActivity"
             android:exported="false" />

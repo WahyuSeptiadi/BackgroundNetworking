@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.why.network.databinding.ActivityMainBinding
+import com.why.network.service.MyServiceActivity
 import com.why.network.thread.ThreadActivity
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -16,15 +17,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnThread.setOnClickListener(this)
+        binding.btnThread goTo ThreadActivity::class.java
+        binding.btnService goTo MyServiceActivity::class.java
     }
 
-    override fun onClick(v: View?) {
-        when (v?.id) {
-            (R.id.btn_thread) -> {
-                val intent = Intent(this, ThreadActivity::class.java)
-                startActivity(intent)
-            }
-        }
+    private fun startActivity(cls: Class<*>) {
+        startActivity(Intent(this, cls))
+    }
+
+    private infix fun View.goTo(cls: Class<*>) {
+        setOnClickListener { startActivity(cls) }
     }
 }
