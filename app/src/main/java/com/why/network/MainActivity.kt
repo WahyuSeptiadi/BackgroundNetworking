@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.why.network.databinding.ActivityMainBinding
-import com.why.network.service.MyServiceActivity
+import com.why.network.service.ServiceActivity
 import com.why.network.thread.ThreadActivity
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnThread goTo ThreadActivity::class.java
-        binding.btnService goTo MyServiceActivity::class.java
+        binding.btnService goTo ServiceActivity::class.java
     }
 
     private fun startActivity(cls: Class<*>) {

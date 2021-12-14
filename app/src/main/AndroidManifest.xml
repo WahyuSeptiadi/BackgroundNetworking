@@ -11,10 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BackgroundNetworking"
         tools:ignore="AllowBackup">
+
         <service
             android:name=".service.MyBoundService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true"
+            tools:ignore="ExportedService" />
         <service
             android:name=".service.MyJobIntentService"
             android:exported="false"
@@ -22,10 +24,11 @@
         <service
             android:name=".service.MyService"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"
+            tools:ignore="ExportedService" />
 
         <activity
-            android:name=".service.MyServiceActivity"
+            android:name=".service.ServiceActivity"
             android:exported="false" />
         <activity
             android:name=".thread.ThreadActivity"

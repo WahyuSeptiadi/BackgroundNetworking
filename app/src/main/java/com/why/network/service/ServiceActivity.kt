@@ -8,11 +8,11 @@ import android.os.IBinder
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.why.network.R
-import com.why.network.databinding.ActivityMyServiceBinding
+import com.why.network.databinding.ActivityServiceBinding
 
-class MyServiceActivity : AppCompatActivity(), View.OnClickListener {
+class ServiceActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var binding: ActivityMyServiceBinding
+    private lateinit var binding: ActivityServiceBinding
 
     // bound service
     private var mServiceBound = false
@@ -32,7 +32,7 @@ class MyServiceActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMyServiceBinding.inflate(layoutInflater)
+        binding = ActivityServiceBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnStartService.setOnClickListener(this)
