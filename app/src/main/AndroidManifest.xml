@@ -12,6 +12,10 @@
         android:theme="@style/Theme.BackgroundNetworking"
         tools:ignore="AllowBackup">
         <service
+            android:name=".service.MyBoundService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
             android:name=".service.MyJobIntentService"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
